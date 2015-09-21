@@ -96,6 +96,173 @@
 	background-color: #ef5350;
 }
 
+/* brackets
+=======================================================*/
+.nav__link_cl-effect-1::before,
+.nav__link_cl-effect-1::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav__link_cl-effect-1::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.nav__link_cl-effect-1::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.nav__link_cl-effect-1:hover::before,
+.nav__link_cl-effect-1:hover::after,
+.nav__link_cl-effect-1:focus::before,
+.nav__link_cl-effect-1:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+/* Effect 3: bottom line slides/fades in
+==============================================================*/
+.nav__span_cl-effect-3 {
+	position: relative;
+	display: inline-block;
+	height: 35px;
+	margin-left: 20px;
+}
+
+.nav__span_cl-effect-3::after {
+	position: absolute;
+	top: 130%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: rgba(239,83,80,0.7);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.nav__link:hover .nav__span_cl-effect-3::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.nav__span_cl-effect-3:hover::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+/* Effect 5: same word slide in */
+
+.nav__link_cl-effect-5 {
+	position: relative;
+	outline: none;
+	text-decoration: none;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	overflow: hidden;
+	padding: 0 4px;
+	line-height: 30px;
+}
+
+.nav__span_cl-effect-5 {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.nav__span_cl-effect-5::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.nav__link_cl-effect-5:hover .nav__span_cl-effect-5 {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+/* Effect 5: same word slide in
+=================================================*/
+.nav__link_cl-effect-21 {
+	position: relative;
+	padding: 10px;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.nav__link_cl-effect-21::before,
+.nav__link_cl-effect-21::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #ef5350;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.nav__link_cl-effect-21::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.nav__link_cl-effect-21::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.nav__link_cl-effect-21:hover::before,
+.nav__link_cl-effect-21:focus::before,
+.nav__link_cl-effect-21:hover::after,
+.nav__link_cl-effect-21:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
 /* Main content
 =================================================*/
 .container {
