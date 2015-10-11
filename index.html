@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="html">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Blog</title>
+	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet'><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -11,42 +12,42 @@
 </head>
 <body class="page">
 	<header>
-		<nav class="nav-wrap">
-			<ul class="nav">
-				<li class="nav__item nav__item_active"><a href="#" class="nav__link nav__link_active">Blog</a></li>
-				<li class="nav__item"><a href="#" class="nav__link nav__link_dropdown">Video</a>
-					<ul class="nav__dropdown-list cl-effect-5">
-						<li class="nav__item nav__item_vertical"><a class="nav__link nav__link_cl-effect-5" href="#"><span class="nav__span_cl-effect-5" data-hover="Video 1">Video 1</span></a></li>
-						<li class="nav__item nav__item_vertical"><a class="nav__link nav__link_cl-effect-5" href="#"><span class="nav__span_cl-effect-5" data-hover="Video 2">Video 2</span></a></li>
-						<li class="nav__item nav__item_vertical"><a class="nav__link nav__link_cl-effect-5" href="#"><span class="nav__span_cl-effect-5" data-hover="Video 3">Video 3</span></a></li>
-						<li class="nav__item nav__item_vertical"><a class="nav__link nav__link_cl-effect-5" href="#"><span class="nav__span_cl-effect-5" data-hover="Video 4">Video 4</span></a></li>
-						<li class="nav__item nav__item_vertical"><a class="nav__link nav__link_cl-effect-5" href="#"><span class="nav__span_cl-effect-5" data-hover="Video 5">Video 5</span></a></li>
+		<nav class="main-menu-wrap">
+			<ul class="main-menu">
+				<li class="main-menu__item main-menu__item_active"><a href="#" class="main-menu__link main-menu__link_active">Blog</a></li>
+				<li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_dropdown">Video</a>
+					<ul class="dropdown-list">
+						<li class="dropdown-list__item"><a class="dropdown-list__link dropdown-list__link_cl-effect-5" href="#"><span class="dropdown-list__span_cl-effect-5" data-hover="Video 1">Video 1</span></a></li>
+						<li class="dropdown-list__item"><a class="dropdown-list__link dropdown-list__link_cl-effect-5" href="#"><span class="dropdown-list__span_cl-effect-5" data-hover="Video 2">Video 2</span></a></li>
+						<li class="dropdown-list__item"><a class="dropdown-list__link dropdown-list__link_cl-effect-5" href="#"><span class="dropdown-list__span_cl-effect-5" data-hover="Video 3">Video 3</span></a></li>
+						<li class="dropdown-list__item"><a class="dropdown-list__link dropdown-list__link_cl-effect-5" href="#"><span class="dropdown-list__span_cl-effect-5" data-hover="Video 4">Video 4</span></a></li>
+						<li class="dropdown-list__item"><a class="dropdown-list__link dropdown-list__link_cl-effect-5" href="#"><span class="dropdown-list__span_cl-effect-5" data-hover="Video 5">Video 5</span></a></li>
 					</ul>
 				</li>
-				<li class="nav__item"><a href="#" class="nav__link nav__link_cl-effect-21">Events</a></li>
-				<li class="nav__item"><a href="#" class="nav__link nav__link_dropdown">Services</a>
-					<ul class="nav__dropdown-list">
-						<li class="nav__item nav__item_vertical"><a class="nav__link" href="#"><span class="nav__span_cl-effect-3">Service 1</span></a></li>
-						<li class="nav__item nav__item_vertical"><a class="nav__link" href="#"><span class="nav__span_cl-effect-3">Service 2</span></a></li>
-						<li class="nav__item nav__item_vertical"><a class="nav__link" href="#"><span class="nav__span_cl-effect-3">Service 3</span></a></li>
+				<li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_cl-effect-21">Events</a></li>
+				<li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_dropdown">Services</a>
+					<ul class="dropdown-list">
+						<li class="dropdown-list__item"><a class="dropdown-list__link" href="#"><span class="dropdown-list__span_cl-effect-3">Service 1</span></a></li>
+						<li class="dropdown-list__item"><a class="dropdown-list__link" href="#"><span class="dropdown-list__span_cl-effect-3">Service 2</span></a></li>
+						<li class="dropdown-list__item"><a class="dropdown-list__link" href="#"><span class="dropdown-list__span_cl-effect-3">Service 3</span></a></li>
 					</ul>
 				</li>
-				<li class="nav__item"><a href="#" class="nav__link nav__link_dropdown">About me</a>
-					<ul class="nav__dropdown-list">
-						<li class="nav__item nav__item_vertical"><a href="#" class="nav__link nav__link_cl-effect-1">Contact 1</a></li>
-						<li class="nav__item nav__item_vertical"><a href="#" class="nav__link nav__link_cl-effect-1">Contact 2</a></li>
-						<li class="nav__item nav__item_vertical"><a href="#" class="nav__link nav__link_cl-effect-1">Contact 3</a></li>
+				<li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_dropdown">About me</a>
+					<ul class="dropdown-list">
+						<li class="dropdown-list__item"><a href="#" class="dropdown-list__link dropdown-list__link_cl-effect-1">Contact 1</a></li>
+						<li class="dropdown-list__item"><a href="#" class="dropdown-list__link dropdown-list__link_cl-effect-1">Contact 2</a></li>
+						<li class="dropdown-list__item"><a href="#" class="dropdown-list__link dropdown-list__link_cl-effect-1">Contact 3</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<div class="container">
-		<section class="content">
+		<main class="content">
 			<article class="post">
 				<header class="post__header">
 					<img src="img/mountains.jpg" height="398" width="680" alt="Mountains. Highest Points on Earth">
-					<h2 class="post__h2"><a class="post__header-link" href="#">Mountains. Highest Points on Earth</a></h2>
+					<h2 class="post__header-text"><a class="post__header-link" href="#">Mountains. Highest Points on Earth</a></h2>
 					<div class="post__meta">
 						<p class="post__date"><span class="fa fa-clock-o post__date-icon"></span>22:50 Aug 16, 2015</p>
 						<ul class="post-share">
@@ -62,7 +63,7 @@
 						</ul>
 					</div>
 				</header>
-				<div class="post__main-content"><p class="post__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur sed laborum et ad neque adipisci dolore, illum perspiciatis recusandae enim impedit aspernatur repellendus, beatae minus praesentium ab dicta alias expedita culpa nesciunt modi sunt, fugiat quasi. Aut, eum? Aliquam, eum, officiis. Hic placeat totam optio rem. Odio, sed, quaerat?</p></div>
+				<div class="post__main-content"><p class="post__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur sed laborum et ad neque adipisci dolore, illum perspiciatis recusandae enim impedit aspernatur repellendus, beatae minus praesentium ab dicta alias expedita culpa nesciunt modi sunt, fugiat quasi. Aut, eum? Aliquam, eum, officiis. Hic placeat totam optio rem. Odio, sed, quaerat?</p></div>
 				<footer class="post__footer">
 					<ul class="postinfo">
 						<li class="postinfo__item">
@@ -78,7 +79,7 @@
 			<article class="post">
 				<header class="post__header">
 					<img src="img/space.jpg" height="510" width="680" alt="In the Solar System: Water, Water Everywhere, But Where to Drink?">
-					<h2 class="post__h2"><a class="post__header-link" href="#">In the Solar System: Water, Water Everywhere, But Where to Drink?</a></h2>
+					<h2 class="post__header-text"><a class="post__header-link" href="#">In the Solar System: Water, Water Everywhere, But Where to Drink?</a></h2>
 					<div class="post__meta">
 						<p class="post__date"><span class="fa fa-clock-o post__date-icon"></span>22:50 Aug 16, 2015</p>
 						<ul class="post-share">
@@ -95,7 +96,7 @@
 					</div>
 				</header>
 				<div class="post__main-content">
-					<p class="post__p">Science fiction movies about aliens threatening the Earth routinely ascribe them the motive of coming here to steal our resources, most often our water. This is ill thought-out, as water is actually extremely common. Any civilization coming to our solar system in need of water (either to drink or to make rocket fuel) would be foolish to plunge all the way inwards to the Earth, from where they’d have to haul their booty back against the pull of the sun’s gravity.</p>
+					<p class="post__par">Science fiction movies about aliens threatening the Earth routinely ascribe them the motive of coming here to steal our resources, most often our water. This is ill thought-out, as water is actually extremely common. Any civilization coming to our solar system in need of water (either to drink or to make rocket fuel) would be foolish to plunge all the way inwards to the Earth, from where they’d have to haul their booty back against the pull of the sun’s gravity.</p>
 				</div>
 				<footer class="post__footer">
 					<ul class="postinfo">
@@ -112,7 +113,7 @@
 			<article class="post">
 				<header class="post__header">
 					<img src="img/bridge.jpg" height="454" width="680" alt="Bridge">
-					<h2 class="post__h2"><a class="post__header-link" href="#">Bridge</a></h2>
+					<h2 class="post__header-text"><a class="post__header-link" href="#">Bridge</a></h2>
 					<div class="post__meta">
 						<p class="post__date"><span class="fa fa-clock-o post__date-icon"></span>22:50 Aug 16, 2015</p>
 						<ul class="post-share">
@@ -129,8 +130,8 @@
 					</div>
 				</header>
 				<div class="post__main-content">
-					<p class="post__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur sed laborum et ad neque adipisci dolore, illum perspiciatis recusandae enim impedit aspernatur repellendus, beatae minus praesentium ab dicta alias expedita culpa nesciunt modi sunt, fugiat quasi. Aut, eum? Aliquam, eum, officiis. Hic placeat totam optio rem. Odio, sed, quaerat?</p>
-					<p class="post__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur sed laborum et ad neque adipisci dolore, illum perspiciatis recusandae enim impedit aspernatur repellendus, beatae minus praesentium ab dicta alias expedita culpa nesciunt modi sunt, fugiat quasi. Aut, eum? Aliquam, eum, officiis. Hic placeat totam optio rem. Odio, sed, quaerat?</p>
+					<p class="post__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur sed laborum et ad neque adipisci dolore, illum perspiciatis recusandae enim impedit aspernatur repellendus, beatae minus praesentium ab dicta alias expedita culpa nesciunt modi sunt, fugiat quasi. Aut, eum? Aliquam, eum, officiis. Hic placeat totam optio rem. Odio, sed, quaerat?</p>
+					<p class="post__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur sed laborum et ad neque adipisci dolore, illum perspiciatis recusandae enim impedit aspernatur repellendus, beatae minus praesentium ab dicta alias expedita culpa nesciunt modi sunt, fugiat quasi. Aut, eum? Aliquam, eum, officiis. Hic placeat totam optio rem. Odio, sed, quaerat?</p>
 				</div>
 				<footer class="post__footer">
 					<ul class="postinfo">
@@ -144,12 +145,12 @@
 					<a href="#" class="footer__read-more">Read more</a>
 				</footer>
 			</article>
-		</section>
-		<aside class="aside">
-			<article class="aside__article aside__article_author">
-				<header class="aside__article__header">
-					<img class="aside__avatar" src="img/avatar.png" height="120" width="120" alt="Boris Abdulov">
-					<h1 class="aside__h1 aside__h1_author">Boris Abdulov</h1>
+		</main>
+		<aside class="sidebar">
+			<div class="sidebar__block sidebar__block_author">
+				<header class="sidebar__block-header">
+					<img class="sidebar__avatar" src="img/avatar.png" height="120" width="120" alt="Boris Abdulov">
+					<h1 class="sidebar__text sidebar__text_author">Boris Abdulov</h1>
 				</header>
 				<ul class="social">
 					<li class="social__item"><a class="social__link social__link_twitter" href="#" title="Twitter"><span class="fa fa-twitter"></span></a></li>
@@ -157,62 +158,62 @@
 					<li class="social__item"><a class="social__link social__link_facebook" href="#" title="Facebook"><span class="fa fa-facebook"></span></a></li>
 					<li class="social__item"><a class="social__link social__link_linkedin" href="#" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
 				</ul>
-			</article>
-			<article class="aside__article aside__article_top-posts">
-				<header class="aside__article__header">
-					<h3 class="aside__h3">Most popular posts:</h3>
+			</div>
+			<div class="sidebar__block sidebar__block_top-posts">
+				<header class="sidebar__block-header">
+					<h3 class="sidebar__h3">Most popular posts:</h3>
 				</header>
 				<ul class="top-posts">
 					<li class="top-posts__item">
-						<div class="top-posts__article-preview">
-							<div class="top-posts__wrap">
-								<div class="top-posts__thumb">
-									<a class="top-posts__link" href="#"><img class="top-posts__img" src="img/space-preview.jpg" height="75" width="100" alt="In the Solar System: Water, Water Everywhere, But Where to Drink?" title="In the Solar System: Water, Water Everywhere, But Where to Drink?"></a>
+						<div class="article-preview">
+							<div class="article-preview__wrap">
+								<div class="article-preview__thumb">
+									<a class="article-preview__link" href="#"><img class="article-preview__img" src="img/space-preview.jpg" height="75" width="100" alt="In the Solar System: Water, Water Everywhere, But Where to Drink?" title="In the Solar System: Water, Water Everywhere, But Where to Drink?"></a>
 								</div>
-								<div class="top-posts__details">
-									<h4 class="top-posts__h4"><a class="top-posts__link" href="#">In the Solar System: Water, Water Everywhere, But Where to Drink?</a></h4>
-								</div>
-							</div>
-							<div class="top-posts__meta">
-								<div class="top-posts__meta-item"><span class="fa fa-clock-o top-posts__icon"></span>22:50 Aug 16, 2015</div>
-								<div class="top-posts__meta-item"><span class="fa fa-eye top-posts__icon"></span>120</div>
-							</div>
-						</div>
-					</li>
-					<li class="top-posts__item">
-						<div class="top-posts__article-preview">
-							<div class="top-posts__wrap">
-								<div class="top-posts__thumb">
-									<a class="top-posts__link" href="#"><img class="top-posts__img" src="img/mountains-preview.jpg" height="75" width="100" alt="Mountains. Highest Points on Earth" title="Mountains. Highest Points on Earth"></a>
-								</div>
-								<div class="top-posts__details">
-								<h4 class="top-posts__h4"><a class="top-posts__link" href="#">Mountains. Highest Points on Earth</a></h4>
+								<div class="article-preview__details">
+									<h4 class="article-preview__h4"><a class="article-preview__link" href="#">In the Solar System: Water, Water Everywhere, But Where to Drink?</a></h4>
 								</div>
 							</div>
-							<div class="top-posts__meta">
-								<div class="top-posts__meta-item"><span class="fa fa-clock-o top-posts__icon"></span>22:50 Aug 16, 2015</div>
-								<div class="top-posts__meta-item"><span class="fa fa-eye top-posts__icon"></span>120</div>
+							<div class="article-preview__meta">
+								<div class="article-preview__meta-item"><span class="fa fa-clock-o article-preview__icon"></span>22:50 Aug 16, 2015</div>
+								<div class="article-preview__meta-item"><span class="fa fa-eye article-preview__icon"></span>120</div>
 							</div>
 						</div>
 					</li>
 					<li class="top-posts__item">
-						<div class="top-posts__article-preview">
-							<div class="top-posts__wrap">
-								<div class="top-posts__thumb">
-									<a class="top-posts__link" href="#"><img class="top-posts__img" src="img/bridge-preview.jpg" height="75" width="100" alt="Bridge" title="Bridge"></a>
+						<div class="article-preview">
+							<div class="article-preview__wrap">
+								<div class="article-preview__thumb">
+									<a class="article-preview__link" href="#"><img class="article-preview__img" src="img/mountains-preview.jpg" height="75" width="100" alt="Mountains. Highest Points on Earth" title="Mountains. Highest Points on Earth"></a>
 								</div>
-								<div class="top-posts__details">
-									<h4 class="top-posts__h4"><a class="top-posts__link" href="#">Bridge</a></h4>
+								<div class="article-preview__details">
+								<h4 class="article-preview__h4"><a class="article-preview__link" href="#">Mountains. Highest Points on Earth</a></h4>
 								</div>
 							</div>
-							<div class="top-posts__meta">
-								<div class="top-posts__meta-item"><span class="fa fa-clock-o top-posts__icon"></span>22:50 Aug 16, 2015</div>
-								<div class="top-posts__meta-item"><span class="fa fa-eye top-posts__icon"></span>120</div>
+							<div class="article-preview__meta">
+								<div class="article-preview__meta-item"><span class="fa fa-clock-o article-preview__icon"></span>22:50 Aug 16, 2015</div>
+								<div class="article-preview__meta-item"><span class="fa fa-eye article-preview__icon"></span>120</div>
+							</div>
+						</div>
+					</li>
+					<li class="top-posts__item">
+						<div class="article-preview">
+							<div class="article-preview__wrap">
+								<div class="article-preview__thumb">
+									<a class="article-preview__link" href="#"><img class="article-preview__img" src="img/bridge-preview.jpg" height="75" width="100" alt="Bridge" title="Bridge"></a>
+								</div>
+								<div class="article-preview__details">
+									<h4 class="article-preview__h4"><a class="article-preview__link" href="#">Bridge</a></h4>
+								</div>
+							</div>
+							<div class="article-preview__meta">
+								<div class="article-preview__meta-item"><span class="fa fa-clock-o article-preview__icon"></span>22:50 Aug 16, 2015</div>
+								<div class="article-preview__meta-item"><span class="fa fa-eye article-preview__icon"></span>120</div>
 							</div>
 						</div>
 					</li>
 				</ul>
-			</article>
+			</div>
 		</aside>
 	</div>
 	<footer class="site-footer">
